@@ -31,3 +31,24 @@ fig1.write_html("interactive_plots/scatter_carat_price.html")
 fig1.write_image("screenshots/scatter_carat_price.png")
 
 print("✅ Visual 1 saved to interactive_plots/ and screenshots/")
+
+# visual 2: donut chart - market share of diamond cuts
+print("Creating Visual 2: Donut Chart...")
+
+# count the concurrence of each cut
+cut_counts = df['cut'].value_counts().reset_index()
+cut_counts.columns = ['cut', 'count']
+
+fig2 = px.pie(
+    data_frame=cut_counts,
+    values='count',
+    names='cut',
+    hole=0.5, # this makes donut chart instead of pie chart
+    title='<b>Market Share of Diamond Cuts</b>',
+    color_discrete_sequence=px.colors.sequential.Viridis
+)
+
+fig2.write_html("interactive_plots/donut_cut_share.html")
+fig2.write_image("screenshots/donut_cut_share.png")
+print("✅ Visual 2 saved to interactive_plots/ and screenshots/")
+
