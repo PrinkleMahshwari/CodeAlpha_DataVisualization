@@ -62,7 +62,7 @@ fig3 = px.violin(
     color='cut',
     box=True, # adds a mini box plot inside violin
     points='outliers', # show the outlier dots
-    title='<b>Price Distribution by Cut Quality</b>Violin shape shows density of data<br>',
+    title='<b>Price Distribution by Cut Quality</b><br>Violin shape shows density of data',
     labels={'cut': 'Cut Quality', 'price': 'Price (USD)'}
 )
 
