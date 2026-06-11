@@ -52,3 +52,20 @@ fig2.write_html("interactive_plots/donut_cut_share.html")
 fig2.write_image("screenshots/donut_cut_share.png")
 print("✅ Visual 2 saved to interactive_plots/ and screenshots/")
 
+# visual 3: violin plot - price distribution by cut
+print("Creating Visual 3: Violin Plot...")
+
+fig3 = px.violin(
+    data_frame=df_sample, # using our 5000 sample
+    x='cut',
+    y='price',
+    color='cut',
+    box=True, # adds a mini box plot inside violin
+    points='outliers', # show the outlier dots
+    title='<b>Price Distribution by Cut Quality</b>Violin shape shows density of data<br>',
+    labels={'cut': 'Cut Quality', 'price': 'Price (USD)'}
+)
+
+fig3.write_html("interactive_plots/violin_price_cut.html")
+fig3.write_image("screenshots/violin_price_cut.png")
+print("✅ Visual 3 saved to interactive_plots/ and screenshots/")
