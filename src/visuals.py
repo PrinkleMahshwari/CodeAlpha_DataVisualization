@@ -69,3 +69,24 @@ fig3 = px.violin(
 fig3.write_html("interactive_plots/violin_price_cut.html")
 fig3.write_image("screenshots/violin_price_cut.png")
 print("✅ Visual 3 saved to interactive_plots/ and screenshots/")
+
+# visual 4: 3D scatter plot - carat s depth vs price
+print("Creating Visual 4: 3D Scatter Plot...")
+
+df_sample_3d = df.sample(2000,  random_state=420) # smaller sample for 3D performance
+
+fig4 = px.scatter_3d(
+    data_frame=df_sample_3d,
+    x='carat',
+    y='depth',
+    z='price',
+    color='cut',
+    title='<b>3D View: Carat, Depth & Price</b>Rotate the plot to explore<br>',
+    labels={'carat': 'Carat', 'depth': 'Depth (%)', 'price': 'Price (USD)', 'cut': 'Cut Quality'},
+    opacity=0.5
+)
+
+fig4.write_html("interactive_plots/3d_scatter.html")
+fig4.write_image("screenshots/3d_scatter.png")
+print("✅ Visual 4 saved to interactive_plots/ and screenshots/")
+
