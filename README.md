@@ -223,11 +223,11 @@ Possible future improvements for this project include:
 
 ## 🎥 LinkedIn Project Demonstration
 
-As part of the CodeAlpha Internship requirements, a project explanation video will be published on LinkedIn.
+As part of the CodeAlpha Internship requirements, a project explanation video has been published on LinkedIn.
 
-**Status:** ⏳ Pending
+**Status:** Done ✅
 
-**LinkedIn Post Link:** To be added after publication.
+**LinkedIn Post Link:** [View LinkedIn Project Demonstration](https://www.linkedin.com/posts/prinkle-maheshwari-544417292_dataanalytics-datavisualization-plotly-ugcPost-7471261919522254850-ofOb/)
 
 ---
 
@@ -273,7 +273,7 @@ This project was developed for educational purposes and as part of the CodeAlpha
 BS Software Engineering Student | Data Analytics Intern
 
 - GitHub: [PrinkleMahshwari](https://github.com/PrinkleMahshwari)
-- LinkedIn: Link to be added
+- LinkedIn: [Project Demonstration Video](https://www.linkedin.com/posts/prinkle-maheshwari-544417292_dataanalytics-datavisualization-plotly-ugcPost-7471261919522254850-ofOb/)
 - Project: **CodeAlpha_DataVisualization**
 - Internship: **CodeAlpha Data Analytics Internship**
 
